@@ -7,10 +7,10 @@
    * colors
    */
 
-  --green-blue-crayola: hsl(202, 75%, 47%);
+  --green-blue-crayola: #093b97;
   --prussian-blue: hsl(202, 72%, 15%);
   --eerie-black: hsl(210, 11%, 15%);
-  --dark-orange: hsl(32, 100%, 50%);
+  --dark-orange: #9fcc3a;
   --alice-blue: hsl(203, 100%, 97%);
   --light-gray: hsl(0, 0%, 80%);
   --indigo-dye: hsl(202, 64%, 26%);
@@ -1439,4 +1439,81 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.about-slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.about-card {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust width as needed */
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.about-description {
+  font-size: 1rem;
+}
+
+.contact {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-field,
+.message-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+.contact-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-content {
+    padding: 0 20px;
+  }
 }
