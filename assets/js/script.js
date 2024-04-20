@@ -60,7 +60,7 @@ $(document).ready(function () {
       .done(function (response) {
         // Success message or redirection
         alert('Your message has been sent!');
-        window.location.href = 'https://yourwebsite.com/thank-you'; // Redirect to thank you page
+        window.location.href = 'https://sadco.netlify.app/'; // Redirect to thank you page
       })
       .fail(function (error) {
         // Error message
